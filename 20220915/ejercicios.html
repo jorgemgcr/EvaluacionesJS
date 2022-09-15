@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        // Estructuras de control
+// if else switch ternarios
+// operador ternario () ? :
+// () -> condicion
+// ? -> que sucede si si?
+// : -> que sucede si no?
+
+// // BUCLES
+// // FOR
+
+// for (let index = 0; index < array.length; index++) {
+//     const element = array[index];
+    
+// }
+// array.forEach(element => {
+    
+// });
+
+// metodos de arreglos
+
+// map. funciona para traer de un arreglo de objetos un 1 item 
+// filter funciona para traer de un arreglos los objetos que cumplan con alguna condicion definida
+    </div>
+<script>
+const alumnos6C = [
+    { id:1, nombre:'Jorge', apellido:'Perez', sexo:'M', edad: 8, nacionalidad:'mx' },
+    { id:2, nombre:'Diego', apellido:'Lopez', sexo:'M', edad: 47, nacionalidad:'col' },
+    { id:3, nombre:'Madera', apellido:'Martinez', sexo:'M', edad: 6, nacionalidad:'mx' },
+    { id:4, nombre:'Carlos', apellido:'Hernandez', sexo:'M', edad: 56, nacionalidad:'col' },
+    { id:5, nombre:'Ana', apellido:'Flores', sexo:'F', edad: 16, nacionalidad:'mx' },
+    { id:6, nombre:'Perla', apellido:'Iracheta', sexo:'F', edad: 15, nacionalidad:'col' },
+    { id:7, nombre:'Maria', apellido:'Wong', sexo:'F', edad: 14, nacionalidad:'col' },
+    { id:8, nombre:'Juana', apellido:'Mefisto', sexo:'F', edad: 13, nacionalidad:'mx' },
+]
+
+const alumnos_mayores_15 = alumnos6C.filter(function(edad){
+    if (edad >= 15) {
+        return alumnos_mayores_15
+    }
+})
+console.log(alumnos_mayores_15)
+// const alumnos_filtrados = alumnos_mayores_15.map(function(element){
+
+// })
+// // Alumnos mayores a 15 años y me retornes su numero de lista concatenado con su nombre y apellido completo.
+// console.log(alumnos6C)
+</script>
+</body>
+</html>
+
+
+
+
