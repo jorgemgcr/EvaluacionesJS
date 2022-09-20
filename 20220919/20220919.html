@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ejercicio 032</h2>   
+<script>
+    // RESULTADO FINAL:
+    const resultadoFinal = [ 
+        01, 02, 03, 04,
+        05, 06, 07, 08,  
+        09, 10, 11, 12,  
+        13, 14, 15, 16]
+    const raiz2 = Math.sqrt(resultadoFinal.length)
+    // console.log(resultadoFinal.length)
+    for (let index = 0; index < raiz2; index++) {
+        console.log(resultadoFinal[index])
+    }
+    console.log('--')
+    // for (let index = raiz2; index <= raiz2 *2; index+raiz2) {
+    //     console.log(index)
+    // }
+    for (let index = 0; index < (raiz2-1); index++) {
+        // console.log(raiz2 * 2 )
+        console.log(raiz2 * (2 + index))
+    } 
+    console.log('--')
+
+    for (let index = 0; index < (raiz2-1); index++) {
+        // console.log(raiz2 * 2 )
+        console.log(resultadoFinal.length -1 -index)
+    } 
+
+    console.log('--')
+
+    for (let index = 0; index < (raiz2-2); index++) {
+        // console.log(raiz2 * 2 )
+        console.log(raiz2 * (2 - index) + 1)
+    } 
+
+    console.log('--')
+
+    for (let index = 0; index < (raiz2-2); index++) {
+        // console.log(raiz2 * 2 )
+        console.log(raiz2 +2 + index)
+    } 
+
+    console.log('--')
+
+    for (let index = 0; index < (raiz2-2); index++) {
+        // console.log(raiz2 * 2 )
+        console.log(raiz2 * (raiz2) - index)
+    } 
+
+    // for (let index = resultadoFinal.length; index < (raiz2*(raiz2-1)+1); index--) {
+    //     console.log('hola')
+    // }
+    
+</script>
+</body>
+</html>

@@ -43,17 +43,26 @@ const alumnos6C = [
     { id:8, nombre:'Juana', apellido:'Mefisto', sexo:'F', edad: 13, nacionalidad:'mx' },
 ]
 
-const alumnos_mayores_15 = alumnos6C.filter(function(edad){
-    if (edad >= 15) {
-        return alumnos_mayores_15
-    }
+const alumnos_mayores_15 = alumnos6C.filter(function(item){
+        return item.edad >= 15
 })
 console.log(alumnos_mayores_15)
+
+const alumnos_lista = alumnos_mayores_15.map(function(item){
+    if (item.edad >= 15) {
+        return item.id + ' ' + item.nombre + ' ' + item.apellido
+    }
+})
+console.log(alumnos_lista)
 // const alumnos_filtrados = alumnos_mayores_15.map(function(element){
 
 // })
 // // Alumnos mayores a 15 años y me retornes su numero de lista concatenado con su nombre y apellido completo.
 // console.log(alumnos6C)
+
+
+
+
 </script>
 </body>
 </html>
